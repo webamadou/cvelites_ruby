@@ -1,0 +1,28 @@
+users:
+  title, name, firstname, b_date,b_place,nationality,address,presentation,viewed,status, timestamps
+educations
+  id, school_id, degree, graduation_year, description, address
+schools
+  id, name, school_type, address, country_id,
+countries
+  ---
+Companies
+  id, name, description, legal_status, address, domain, status, exist_since
+experiences:
+  title, company_id, user_id, description, started_at, ended_at, still_there
+languages
+  name, code, status
+hobbies
+  name, icon, status
+hobby_user
+  id, hobby_id, user_id
+resumes
+  id,name, description, status, user_id
+language_resume
+  id, language_id, resume_id, level(native, fluent, good, beginner),
+domains
+  id, name, description,parent_id,status
+templates
+  id, name, description, domain_id, views, status
+resume_template
+  id, resume_id, template_id
