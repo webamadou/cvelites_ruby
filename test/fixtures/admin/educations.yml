@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: one
+  degree: MyString
+  graduation_year: 2019-01-25
+  description: MyText
+  address: MyString
+
+two:
+  school: two
+  degree: MyString
+  graduation_year: 2019-01-25
+  description: MyText
+  address: MyString

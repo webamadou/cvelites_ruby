@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admin Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Firstname</th>
+      <th>Email</th>
+      <th>Title</th>
+      <th>Presentation</th>
+      <th>Birth date</th>
+      <th>Birth place</th>
+      <th>Country</th>
+      <th>Address</th>
+      <th>Views</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_users.each do |admin_user| %>
+      <tr>
+        <td><%= admin_user.name %></td>
+        <td><%= admin_user.firstname %></td>
+        <td><%= admin_user.email %></td>
+        <td><%= admin_user.title %></td>
+        <td><%= admin_user.presentation %></td>
+        <td><%= admin_user.birth_date %></td>
+        <td><%= admin_user.birth_place %></td>
+        <td><%= admin_user.country %></td>
+        <td><%= admin_user.address %></td>
+        <td><%= admin_user.views %></td>
+        <td><%= admin_user.status %></td>
+        <td><%= link_to 'Show', admin_user %></td>
+        <td><%= link_to 'Edit', edit_admin_user_path(admin_user) %></td>
+        <td><%= link_to 'Destroy', admin_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin User', new_admin_user_path %>

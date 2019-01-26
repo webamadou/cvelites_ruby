@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  company: one
+  user: one
+  description: MyText
+  started_at: 2019-01-25
+  ended_at: 2019-01-25
+  still_there: false
+  status: 1
+
+two:
+  title: MyString
+  company: two
+  user: two
+  description: MyText
+  started_at: 2019-01-25
+  ended_at: 2019-01-25
+  still_there: false
+  status: 1

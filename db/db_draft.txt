@@ -1,7 +1,7 @@
 users:
   title, name, firstname, b_date,b_place,nationality,address,presentation,viewed,status, timestamps
 educations
-  id, school_id, degree, graduation_year, description, address
+  id, school_id, user_id, degree, graduation_year, description, address
 schools
   id, name, school_type, address, country_id,
 countries
@@ -13,7 +13,7 @@ experiences:
 languages
   name, code, status
 hobbies
-  name, icon, status
+  name, icon, status, user_id
 hobby_user
   id, hobby_id, user_id
 resumes

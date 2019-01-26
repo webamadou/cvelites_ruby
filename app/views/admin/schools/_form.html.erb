@@ -1,0 +1,42 @@
+<%= form_with(model: admin_school, local: true) do |form| %>
+  <% if admin_school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_school.errors.count, "error") %> prohibited this admin_school from being saved:</h2>
+
+      <ul>
+      <% admin_school.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :legal_status %>
+    <%= form.text_field :legal_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country_id %>
+    <%= form.text_field :country_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

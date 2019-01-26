@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @admin_template.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @admin_template.description %>
+</p>
+
+<p>
+  <strong>Domain:</strong>
+  <%= @admin_template.domain %>
+</p>
+
+<p>
+  <strong>Views:</strong>
+  <%= @admin_template.views %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @admin_template.status %>
+</p>
+
+<%= link_to 'Edit', edit_admin_template_path(@admin_template) %> |
+<%= link_to 'Back', admin_templates_path %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Iso:</strong>
+  <%= @admin_country.iso %>
+</p>
+
+<p>
+  <strong>Libelle:</strong>
+  <%= @admin_country.name %>
+</p>
+
+<p>
+  <strong>Nicename:</strong>
+  <%= @admin_country.nicename %>
+</p>
+
+<p>
+  <strong>Iso3:</strong>
+  <%= @admin_country.iso3 %>
+</p>
+
+<p>
+  <strong>Numcode:</strong>
+  <%= @admin_country.numcode %>
+</p>
+
+<p>
+  <strong>Phonecode:</strong>
+  <%= @admin_country.phonecode %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @admin_country.status %>
+</p>
+
+<%= link_to 'Edit', edit_admin_country_path(@admin_country) %> |
+<%= link_to 'Back', admin_countries_path %>
