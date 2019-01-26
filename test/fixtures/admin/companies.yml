@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  legal_status: MyString
+  address: MyString
+  domain_id: 1
+  status: 1
+  exist_since: 2019-01-23
+
+two:
+  name: MyString
+  description: MyString
+  legal_status: MyString
+  address: MyString
+  domain_id: 1
+  status: 1
+  exist_since: 2019-01-23

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admin Countries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Iso</th>
+      <th>Name</th>
+      <th>Nicename</th>
+      <th>Iso3</th>
+      <th>Numcode</th>
+      <th>Phonecode</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_countries.each do |admin_country| %>
+      <tr>
+        <td><%= admin_country.iso %></td>
+        <td><%= admin_country.name %></td>
+        <td><%= admin_country.nicename %></td>
+        <td><%= admin_country.iso3 %></td>
+        <td><%= admin_country.numcode %></td>
+        <td><%= admin_country.phonecode %></td>
+        <td><%= admin_country.status %></td>
+        <td><%= link_to 'Show', admin_country %></td>
+        <td><%= link_to 'Edit', edit_admin_country_path(admin_country) %></td>
+        <td><%= link_to 'Destroy', admin_country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin Country', new_admin_country_path %>
