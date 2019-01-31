@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @admin_achievement.user %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @admin_achievement.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @admin_achievement.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @admin_achievement.status %>
+</p>
+
+<%= link_to 'Edit', edit_admin_achievement_path(@admin_achievement) %> |
+<%= link_to 'Back', admin_achievements_path %>

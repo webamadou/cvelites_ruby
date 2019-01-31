@@ -1,0 +1,10 @@
+<h1>Home Page</h1>
+<b><%= @user.name %></b>
+<ul>
+  <% @user.resumes.each do |resume| %>
+    <li>
+      <a href="<%= resume_config_path(resume.code) %>">config</a>
+      <%= resume.name %>
+    </li>
+  <% end %>
+</ul>

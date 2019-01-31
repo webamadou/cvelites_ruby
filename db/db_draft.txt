@@ -30,6 +30,8 @@ resume_template
 achievement
     user_id, title, description
 skills
-    user_id, name, level
+    name, description
 skills_users
-    user_id, skills_id
+    user_id, skills_id, level
+awards
+    user_id, title, description, date,

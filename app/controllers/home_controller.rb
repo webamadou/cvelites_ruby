@@ -1,5 +1,4 @@
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class HomeController < ApplicationController
 
   #split_code will split a string returning strings and numbers in two different vars
   def split_code(string)
@@ -17,4 +16,11 @@ class ApplicationRecord < ActiveRecord::Base
     [chars, numbers]
   end
 
+  def index
+    #@user = Admin::User.order("RAND()").includes(:resumes).first
+    @user = Admin::User.find(1)
+    puts '--------------->'
+    puts @user.inspect
+    puts '--------------->'
+  end
 end

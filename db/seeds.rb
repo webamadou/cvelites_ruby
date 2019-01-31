@@ -356,12 +356,33 @@ end
       :ended_at => Faker::Date.between_except(3.year.ago, 1.month.from_now, Date.today),
       :still_there => false,
       :status => 1
-  )
+  ) 
+  #create achievement
+  Admin::Achievement.create(
+  		user_id: user.id,
+  		title: Faker::Lorem.sentence(2),
+  		description: '',
+  		status: 1
+  	) 
+  #create achievement
+  Admin::Award.create(
+  		user_id: user.id,
+  		title: Faker::Lorem.sentence(2),
+  		description: ''
+  	)
+  #create achievement
+  skill = Admin::Skill.create(
+  		name: Faker::Lorem.sentence(2),
+  		status: 1
+  	)
+  #join skill and user
+  user.skills << skill
   #adding resume
   resume = Admin::Resume.create(
-  		:name => Faker::Name.name,
-      	:user_id => user.id,
-      	:status => 1
+  		:name     => Faker::Name.name,
+      :user_id  => user.id,
+      :code => SecureRandom.uuid,
+      :status   => 1,
   	)
   #joinning hobbies users
   user.hobbies << hobby 

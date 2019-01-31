@@ -1,0 +1,37 @@
+<%= form_with(model: admin_achievement, local: true) do |form| %>
+  <% if admin_achievement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_achievement.errors.count, "error") %> prohibited this admin_achievement from being saved:</h2>
+
+      <ul>
+      <% admin_achievement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.number_field :status %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
