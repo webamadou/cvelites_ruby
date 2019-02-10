@@ -5,6 +5,10 @@ class Admin::UsersController < ApplicationController
   # GET /admin/users.json
   def index
     @admin_users = Admin::User.all
+    respond_to do |format|
+      format.html
+      format.json {render :json => Admin::UserDatatable.new(params)}
+    end
   end
 
   # GET /admin/users/1

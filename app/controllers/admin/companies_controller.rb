@@ -5,6 +5,10 @@ class Admin::CompaniesController < ApplicationController
   # GET /admin/companies.json
   def index
     @admin_companies = Admin::Company.all
+    respond_to do |format|
+      format.html
+      format.json { render json: Admin::CompaniesDatatable.new(params)}
+    end
   end
 
   # GET /admin/companies/1

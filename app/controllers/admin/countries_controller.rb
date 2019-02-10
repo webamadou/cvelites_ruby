@@ -4,7 +4,13 @@ class Admin::CountriesController < ApplicationController
   # GET /admin/countries
   # GET /admin/countries.json
   def index
-    @admin_countries = Admin::Country.all
+    @admin_countries = Admin::CountryDecorator.all
+    respond_to do |format|
+      format.html
+      format.json {
+        render json: CountryDatatable.new(params)
+      }
+    end
   end
 
   # GET /admin/countries/1

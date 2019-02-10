@@ -19,8 +19,9 @@ class HomeController < ApplicationController
   def index
     #@user = Admin::User.order("RAND()").includes(:resumes).first
     @user = Admin::User.find(1)
-    puts '--------------->'
-    puts @user.inspect
-    puts '--------------->'
+    session[:user_id] = @user.id
+    puts "****************************************"
+    puts session.inspect
+    puts "****************************************"
   end
 end

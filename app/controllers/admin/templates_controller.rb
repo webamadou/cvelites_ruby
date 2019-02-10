@@ -5,6 +5,10 @@ class Admin::TemplatesController < ApplicationController
   # GET /admin/templates.json
   def index
     @admin_templates = Admin::Template.all
+    respond_to do |format|
+      format.html
+      format.json { render json: TemplatesDatatable.new(params) }
+    end
   end
 
   # GET /admin/templates/1

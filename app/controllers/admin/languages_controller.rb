@@ -5,6 +5,10 @@ class Admin::LanguagesController < ApplicationController
   # GET /admin/languages.json
   def index
     @admin_languages = Admin::Language.all
+    respond_to do |format|
+      format.html
+      format.json {render :json => Admin::LanguageDatatable.new(params)}
+    end
   end
 
   # GET /admin/languages/1
