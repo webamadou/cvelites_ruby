@@ -5,6 +5,10 @@ class Admin::AchievementsController < ApplicationController
   # GET /admin/achievements.json
   def index
     @admin_achievements = Admin::Achievement.all
+    respond_to do |format|
+      format.html
+      format.json {render :json => Admin::AchievementDatatable.new(params)}
+    end
   end
 
   # GET /admin/achievements/1
@@ -28,7 +32,7 @@ class Admin::AchievementsController < ApplicationController
 
     respond_to do |format|
       if @admin_achievement.save
-        format.html { redirect_to @admin_achievement, notice: 'Achievement was successfully created.' }
+        format.html { redirect_to @admin_achievement, success: 'Achievement was successfully created.' }
         format.json { render :show, status: :created, location: @admin_achievement }
       else
         format.html { render :new }
@@ -42,7 +46,7 @@ class Admin::AchievementsController < ApplicationController
   def update
     respond_to do |format|
       if @admin_achievement.update(admin_achievement_params)
-        format.html { redirect_to @admin_achievement, notice: 'Achievement was successfully updated.' }
+        format.html { redirect_to @admin_achievement, success: 'Achievement was successfully updated.' }
         format.json { render :show, status: :ok, location: @admin_achievement }
       else
         format.html { render :edit }
@@ -56,7 +60,7 @@ class Admin::AchievementsController < ApplicationController
   def destroy
     @admin_achievement.destroy
     respond_to do |format|
-      format.html { redirect_to admin_achievements_url, notice: 'Achievement was successfully destroyed.' }
+      format.html { redirect_to admin_achievements_url, success: 'Achievement was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

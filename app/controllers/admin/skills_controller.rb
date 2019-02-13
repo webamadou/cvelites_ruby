@@ -5,6 +5,10 @@ class Admin::SkillsController < ApplicationController
   # GET /admin/skills.json
   def index
     @admin_skills = Admin::Skill.all
+    respond_to do |format|
+      format.html
+      format.json {render json: Admin::SkillDatatable.new(params)}
+    end
   end
 
   # GET /admin/skills/1

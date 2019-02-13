@@ -1,24 +1,25 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>User:</strong>
-  <%= @admin_award.user %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @admin_award.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @admin_award.description %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @admin_award.date %>
-</p>
-
-<%= link_to 'Edit', edit_admin_award_path(@admin_award) %> |
-<%= link_to 'Back', admin_awards_path %>
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <h3><%= @admin_award.title %></h3>
+      <div class="row">
+        <div class="col-md-6"><%= @admin_award.decorate.user %></div>
+        <div class="col-md-6"><strong><%= @admin_award.decorate.award_date %></strong></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div id="notice">
+        <% flash.each do |class_name, message| %>
+          <div class="alert alert-<%= class_name %>"><%= message %></div>
+        <% end %>
+      </div>
+        <div>
+          <strong>Description:</strong>
+          <%= @admin_award.description %>
+        </div>
+      <%= link_to 'Edit', edit_admin_award_path(@admin_award), class: "btn btn-primary" %> |
+      <%= link_to 'Back', admin_awards_path, class: "btn btn-default" %>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

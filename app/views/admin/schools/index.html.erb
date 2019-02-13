@@ -1,35 +1,37 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Admin Schools</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Legal status</th>
-      <th>Address</th>
-      <th>Country</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @admin_schools.each do |admin_school| %>
-      <tr>
-        <td><%= admin_school.name %></td>
-        <td><%= admin_school.description %></td>
-        <td><%= admin_school.legal_status %></td>
-        <td><%= admin_school.address %></td>
-        <td><%= admin_school.country %></td>
-        <td><%= link_to 'Show', admin_school %></td>
-        <td><%= link_to 'Edit', edit_admin_school_path(admin_school) %></td>
-        <td><%= link_to 'Destroy', admin_school, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Admin School', new_admin_school_path %>
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <p id="notice"><%= notice %></p>
+      <h3>Admin Schools</h3>
+    </div>
+    <div class="card-body">
+      <%= link_to 'Add school', new_admin_school_path, class: 'btn btn-primary' %>
+      <table id="schools-dt" width="100%" class="table table-bordered table-striped" data-source="<%= admin_schools_path %>">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Legal status</th>
+            <th>Address</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <!--<tbody>
+          <%# @admin_schools.each do |admin_school| %>
+            <tr>
+              <td><%#= admin_school.name %></td>
+              <td><%#= admin_school.description %></td>
+              <td><%#= admin_school.legal_status %></td>
+              <td><%#= admin_school.address %></td>
+              <td><%#= admin_school.country %></td>
+              <td><%#= link_to 'Show', admin_school %></td>
+              <td><%#= link_to 'Edit', edit_admin_school_path(admin_school) %></td>
+              <td><%#= link_to 'Destroy', admin_school, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <%# end %>
+        </tbody>-->
+      </table>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

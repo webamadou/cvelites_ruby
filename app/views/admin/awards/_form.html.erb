@@ -10,28 +10,37 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+<div class="row">
+  <div class="field col-md-6">
+    <div class="fom-group bmd-form-group">
+      <%= form.label :user_id, class: "bmd-label-floating" %>
+      <%= form.text_field :user_id, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="field col-md-6">
+    <div class="fom-group bmd-form-group">
+      <%= form.label :title, class: "bmd-label-floating" %>
+      <%= form.text_field :title, class: "form-control" %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <div class="field col-md-6">
+    <div class="fom-group bmd-form-group">
+      <%= form.label :description, class: "bmd-label-floating" %>
+      <%= form.text_area :description, class: "form-control" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
+</div>
+<div class="row">
+  <div class="field col-md-6">
+    <div class="fom-group bmd-form-group">
+      <%= form.label :date, class: "bmd-label-floating" %>
+      <%= form.date_select :date,{},{class: "form-control"} %>
+    </div>
   </div>
-
+</div>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "save", :class => "btn btn-primary" %>
   </div>
 <% end %>

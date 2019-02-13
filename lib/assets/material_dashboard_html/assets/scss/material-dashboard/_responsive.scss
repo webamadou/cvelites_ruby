@@ -9,14 +9,14 @@
         padding: 15px;
     }
 
-    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    /*.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
       width: -webkit-fill-available !important;
 
       .dropdown-menu.show {
         min-width: auto;
         left: auto;
       }
-    }
+    }*/
 
     .carousel .card .card-body{
       max-width: 340px;
@@ -186,7 +186,7 @@
         right: 101% !important;
 
         .dropdown-item.open + .dropdown-menu,
-        .dropdown-item.open + .dropdown-menu.show,{
+        .dropdown-item.open + .dropdown-menu.show{
           left: -165px !important;
         }
       }

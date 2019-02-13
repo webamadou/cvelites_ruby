@@ -1,6 +1,11 @@
-<h1>Editing Admin Achievement</h1>
-
-<%= render 'form', admin_achievement: @admin_achievement %>
-
-<%= link_to 'Show', @admin_achievement %> |
-<%= link_to 'Back', admin_achievements_path %>
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary"><h3>Editing Admin Achievement</h3></div>
+    <div class="card-body">
+      <%= render 'form', admin_achievement: @admin_achievement %>
+    </div>
+  </div>
+  <%= link_to 'Show', @admin_achievement %> |
+  <%= link_to 'Back', admin_achievements_path %>
+<% end %>
+<%= render template: "layouts/material_dashboard" %>

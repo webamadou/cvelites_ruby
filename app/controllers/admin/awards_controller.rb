@@ -5,6 +5,10 @@ class Admin::AwardsController < ApplicationController
   # GET /admin/awards.json
   def index
     @admin_awards = Admin::Award.all
+    respond_to do |format|
+      format.html
+      format.json {render :json => Admin::AwardDatatable.new(params)}
+    end
   end
 
   # GET /admin/awards/1
@@ -28,7 +32,7 @@ class Admin::AwardsController < ApplicationController
 
     respond_to do |format|
       if @admin_award.save
-        format.html { redirect_to @admin_award, notice: 'Award was successfully created.' }
+        format.html { redirect_to @admin_award, success: 'Award was successfully created.' }
         format.json { render :show, status: :created, location: @admin_award }
       else
         format.html { render :new }
@@ -42,7 +46,7 @@ class Admin::AwardsController < ApplicationController
   def update
     respond_to do |format|
       if @admin_award.update(admin_award_params)
-        format.html { redirect_to @admin_award, notice: 'Award was successfully updated.' }
+        format.html { redirect_to @admin_award, success: 'Award was successfully updated.' }
         format.json { render :show, status: :ok, location: @admin_award }
       else
         format.html { render :edit }
@@ -56,7 +60,7 @@ class Admin::AwardsController < ApplicationController
   def destroy
     @admin_award.destroy
     respond_to do |format|
-      format.html { redirect_to admin_awards_url, notice: 'Award was successfully destroyed.' }
+      format.html { redirect_to admin_awards_url, success: 'Award was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

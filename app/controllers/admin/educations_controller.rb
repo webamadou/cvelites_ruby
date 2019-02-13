@@ -5,6 +5,10 @@ class Admin::EducationsController < ApplicationController
   # GET /admin/educations.json
   def index
     @admin_educations = Admin::Education.all
+    respond_to do |format|
+      format.html
+      format.json {render json: Admin::EducationDatatable.new(params)}
+    end
   end
 
   # GET /admin/educations/1

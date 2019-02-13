@@ -5,6 +5,10 @@ class Admin::DomainsController < ApplicationController
   # GET /admin/domains.json
   def index
     @admin_domains = Admin::Domain.all
+    respond_to do |format|
+      format.html
+      format.json {render json: Admin::DomainDatatable.new(params)}
+    end
   end
 
   # GET /admin/domains/1
