@@ -15,10 +15,6 @@ class Admin::TemplateDecorator < ApplicationDecorator
     h.link_to object.name, h.edit_admin_template_path(object)
   end
 
-
-  # Just an example of a complex method you can add to you decorator
-  # To render it in a datatable just add a column 'dt_actions' in
-  # 'view_columns' and 'data' methods and call record.decorate.dt_actions
   def dt_actions
     links = []
     links <<(h.link_to 'Edit',   h.edit_admin_template_path(object), :class => 'btn btn-xs btn-primary')

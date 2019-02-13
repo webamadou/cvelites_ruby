@@ -16,5 +16,26 @@
 // require datatables
 //= require popper
 //= require bootstrap
+//-------------------------MaterialDashboard------------------------
+//= require assets/js/core/bootstrap-material-design.min
+//= require assets/js/core/bootstrap-material-design.min
+//= require assets/js/plugins/perfect-scrollbar.jquery.min
+//= require assets/js/plugins/moment.min
+//= require assets/js/plugins/sweetalert2
+//= require assets/js/plugins/jquery.validate.min
+//= require assets/js/plugins/jquery.bootstrap-wizard
+//= require assets/js/plugins/bootstrap-selectpicker.js
+//= require assets/js/plugins/bootstrap-datetimepicker.min
+//= require assets/js/plugins/jquery.dataTables.min.js
+//= require assets/js/plugins/bootstrap-tagsinput
+//= require assets/js/plugins/jasny-bootstrap.min
+//= require assets/js/plugins/fullcalendar.min
+//= require assets/js/plugins/jquery-jvectormap
+//= require assets/js/plugins/nouislider.min
+//= require assets/js/plugins/arrive.min
+//= require assets/js/plugins/chartist.min
+//= require assets/js/plugins/bootstrap-notify
+//= require assets/js/material-dashboard
+//---------------------------------------------------------------
 //= require datatables
 //= require_tree .

@@ -5,6 +5,10 @@ class Admin::HobbiesController < ApplicationController
   # GET /admin/hobbies.json
   def index
     @admin_hobbies = Admin::Hobby.all
+    respond_to do |format|
+      format.html
+      format.json {render json: Admin::HobbyDatatable.new(params)}
+    end
   end
 
   # GET /admin/hobbies/1

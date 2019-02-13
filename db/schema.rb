@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_30_112007) do
+ActiveRecord::Schema.define(version: 2019_02_11_230929) do
 
   create_table "achievements", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
@@ -60,11 +60,11 @@ ActiveRecord::Schema.define(version: 2019_01_30_112007) do
   create_table "domains", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.bigint "parent_id_id"
+    t.bigint "parent_id"
     t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["parent_id_id"], name: "index_domains_on_parent_id_id"
+    t.index ["parent_id"], name: "index_domains_on_parent_id"
   end
 
   create_table "educations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -97,12 +97,10 @@ ActiveRecord::Schema.define(version: 2019_01_30_112007) do
 
   create_table "hobbies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.bigint "user_id"
     t.string "icon", default: ""
     t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_hobbies_on_user_id"
   end
 
   create_table "hobbies_users", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -209,7 +207,6 @@ ActiveRecord::Schema.define(version: 2019_01_30_112007) do
   add_foreign_key "educations", "schools"
   add_foreign_key "experiences", "companies"
   add_foreign_key "experiences", "users"
-  add_foreign_key "hobbies", "users"
   add_foreign_key "resumes", "users"
   add_foreign_key "schools", "countries"
   add_foreign_key "templates", "domains", on_update: :cascade, on_delete: :cascade

@@ -1,24 +1,29 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>User:</strong>
-  <%= @admin_achievement.user %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @admin_achievement.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @admin_achievement.description %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @admin_achievement.status %>
-</p>
-
-<%= link_to 'Edit', edit_admin_achievement_path(@admin_achievement) %> |
-<%= link_to 'Back', admin_achievements_path %>
+<%= content_for :dashboard_content do %>
+  <div class="card card-profile">
+    <div class="card-avatar"></div>
+    <div class="card-body">
+      <div id="notice">
+        <% flash.each do |class_name, message| %>
+          <div class="alert alert-<%= class_name %>"><%= message %></div>
+        <% end %>
+      </div>
+      <div>
+        <h3><%= @admin_achievement.title %></h3>
+      </div>
+      <div>
+        <strong><%= @admin_achievement.user.name %> <br> <%= link_to "User's details", admin_achievement_path(@admin_achievement.user.id) %></strong>
+      </div>
+      <p>
+        <!--<strong>Description:</strong>-->
+        <%= @admin_achievement.description %>
+      </p>
+      <!--<p>
+        <strong>Status:</strong>
+        < %= @admin_achievement.status %>
+      </p>-->
+      <a href="<%= edit_admin_achievement_path(@admin_achievement) %>" class="btn btn-primary"><i class="material-icons">create</i> Edit </a> |
+      <a href="<%= admin_achievements_path %>" class="btn btn-default"><i class="material-icons">navigate_before</i> Back</a>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

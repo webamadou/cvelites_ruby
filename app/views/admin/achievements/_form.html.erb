@@ -1,9 +1,10 @@
+
 <%= form_with(model: admin_achievement, local: true) do |form| %>
   <% if admin_achievement.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(admin_achievement.errors.count, "error") %> prohibited this admin_achievement from being saved:</h2>
+      <strong><%= pluralize(admin_achievement.errors.count, "error") %> prohibited this admin_achievement from being saved:</strong>
 
-      <ul>
+      <ul class="alert alert-danger">
       <% admin_achievement.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
@@ -11,27 +12,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id %>
+  <div class="row">
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :user_id, class: 'bmd-label-floating' %>
+        <%= form.select :user_id, Admin::User.pluck([:name, :id]), {include_blank: true},{ :class => 'form-control'} %>
+      </div>
+    </div>
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Title</label>
+        <%= form.text_field :title, class: 'form-control' %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.number_field :status %>
+  <div class="row">
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :description, class: 'bmd-label-floating'%>
+        <%= form.text_area :description, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :status, class: 'bmd-label-floating' %>
+        <%= form.number_field :status, class: "form-control" %>
+      </div>
+    </div>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Save" ,class: "btn btn-default" %>
   </div>
 <% end %>

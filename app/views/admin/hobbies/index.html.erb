@@ -1,33 +1,34 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Admin Hobbies</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Icon</th>
-      <th>Status</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @admin_hobbies.each do |admin_hobby| %>
-      <tr>
-        <td><%= admin_hobby.name %></td>
-        <td><%= admin_hobby.icon %></td>
-        <td><%= admin_hobby.status %></td>
-        <td><%= admin_hobby.user %></td>
-        <td><%= link_to 'Show', admin_hobby %></td>
-        <td><%= link_to 'Edit', edit_admin_hobby_path(admin_hobby) %></td>
-        <td><%= link_to 'Destroy', admin_hobby, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Admin Hobby', new_admin_hobby_path %>
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <p id="notice"><%= notice %></p>
+      <h3>Admin Hobbies</h3>
+    </div>
+    <div class="card-body">
+      <table id="hobbies-dt" class="table table-bordered table-striped" width="100%" data-source="<%= admin_hobbies_path %>">
+        <%= link_to 'Add hobby', new_admin_hobby_path, class: 'btn btn-primary' %>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>User</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <!--<tbody>
+          <%# @admin_hobbies.each do |admin_hobby| %>
+            <tr>
+              <td><%#= admin_hobby.name %></td>
+              <td><%#= admin_hobby.icon %></td>
+              <td><%#= admin_hobby.status %></td>
+              <td><%#= admin_hobby.user %></td>
+              <td><%#= link_to 'Show', admin_hobby %></td>
+              <td><%#= link_to 'Edit', edit_admin_hobby_path(admin_hobby) %></td>
+              <td><%#= link_to 'Destroy', admin_hobby, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <%# end %>
+        </tbody>-->
+      </table>
+<% end %>
+<%= render :template => 'layouts/material_dashboard' %>

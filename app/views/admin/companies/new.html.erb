@@ -1,5 +1,12 @@
-<h1>New Admin Company</h1>
-
-<%= render 'form', admin_company: @admin_company %>
-
-<%= link_to 'Back', admin_companies_path %>
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <h3>New Admin Company</h3>
+    </div>
+    <div class="card-body">
+      <%= render 'form', admin_company: @admin_company %>
+      <%= link_to 'Back', admin_companies_path %>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

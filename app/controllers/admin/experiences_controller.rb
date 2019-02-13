@@ -5,6 +5,10 @@ class Admin::ExperiencesController < ApplicationController
   # GET /admin/experiences.json
   def index
     @admin_experiences = Admin::Experience.all
+    respond_to do |format|
+      format.html
+      format.json {render json: Admin::ExperienceDatatable.new(params)}
+    end
   end
 
   # GET /admin/experiences/1

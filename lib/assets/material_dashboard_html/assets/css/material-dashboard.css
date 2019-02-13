@@ -14678,7 +14678,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   height: 100%;
   content: "";
   display: block;
-  background: #FFFFFF;
+  background: #060606;
   opacity: .93;
 }
 

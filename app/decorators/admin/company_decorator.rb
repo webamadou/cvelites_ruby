@@ -4,11 +4,12 @@ class Admin::CompanyDecorator < ApplicationDecorator
   # Define presentation-specific methods here. Helpers are accessed through
   # `helpers` (aka `h`). You can override attributes, for example:
   #
-  #   def created_at
-  #     helpers.content_tag :span, class: 'time' do
-  #       object.created_at.strftime("%a %m/%d/%y")
-  #     end
-  #   end
+  def created_at
+     helpers.content_tag :span, class: 'time' do
+       object.created_at.strftime("%a %m/%d/%y")
+     end
+  end
+
   def name
     name = []
 
@@ -21,7 +22,7 @@ class Admin::CompanyDecorator < ApplicationDecorator
   def actions
     links = []
     links <<(h.link_to 'Edit', h.edit_admin_company_path(object), :class => 'btn btn-xs btn-primary')
-    links <<(h.link_to "Delete", h.admin_company_path(object), :methdod => :delete, 'data-confirm' => 'You are about to delete this company. <br/>Do you confirm the action?', class: 'btn btn-xs btn-delete')
+    links <<(h.link_to "Delete", h.admin_company_path(object), 'data-method' => :delete, 'data-confirm' => 'You are about to delete this company. <br/>Do you confirm the action?', class: 'btn btn-xs btn-delete')
     h.safe_join(links,' - ')
   end
 end

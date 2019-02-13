@@ -16,9 +16,6 @@ class TemplatesDatatable < AjaxDatatablesRails::ActiveRecord
   def data
     records.map do |record|
       {
-        # example:
-        # id: record.id,
-        # name: record.name
         name:         record.decorate.link_to,
         views:        record.decorate.views,
         status:       record.decorate.status,
