@@ -23,5 +23,6 @@ class HomeController < ApplicationController
     puts "****************************************"
     puts session.inspect
     puts "****************************************"
+    render layout: 'layouts/front-end'
   end
 end

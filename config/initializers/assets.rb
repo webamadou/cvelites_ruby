@@ -12,3 +12,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+# Adding manifest files for front-end and dashboard
+Rails.application.config.assets.precompile += %w(dashboard.js dashboard.scss)
+Rails.application.config.assets.precompile += %w(front-end.css front-end.js)
+Rails.application.config.assets.precompile += %w(*.png)

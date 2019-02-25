@@ -1,14 +1,105 @@
-<% content_for :dashboard_content do %>
-  <h1>Home Page</h1>
-  <b><%= @user.name %></b>
-  <ul>
-  <% @user.resumes.each do |resume| %>
-    <li>
-      <a href="<%= resume_config_path(resume.code) %>">config</a>
-      <%= link_to "Download CV", resume_config_path(resume.code, :format => :pdf), :format => :pdf %>
-      <%= resume.name %>
-    </li>
-  <% end %>
-  </ul>
-<% end %>
-<%= render template: 'layouts/material_dashboard' %>
+<section class="home_banner_area">
+  <div class="banner_inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="banner_content">
+            <h2 class="logo-design"><strong>C</strong><b>V</b>ELITE</h2>
+            <h3>THE ONLINE RESUME BUILDER</h3><br/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="banner_content">
+          <div class="col-lg-12">
+            <h5>Improve your chance to find a job</h5>
+            <div><a href="#" class="btn btn-lg primary-btn text-uppercase">create your cv online</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="department_area section_gap">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="dpmt_courses">
+          <div class="row">
+            <!-- single course -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+              <div class="single_department">
+                <div class="dpmt_icon">
+                  <%= image_tag "img/dpmt/icon1.png" %>
+                </div>
+                <h4>Multi - lang</h4>
+              </div>
+            </div>
+            <!-- single course -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+              <div class="single_department">
+                <div class="dpmt_icon">
+                  <%= image_tag "img/dpmt/icon7.png" %>
+                </div>
+                <h4>Templates ready</h4>
+              </div>
+            </div>
+            <!-- single course -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+              <div class="single_department">
+                <div class="dpmt_icon">
+                  <%= image_tag "img/dpmt/icon5.png" %>
+                </div>
+                <h4>Customization</h4>
+              </div>
+            </div>
+            <!-- single course -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+              <div class="single_department">
+                <div class="dpmt_icon">
+                  <i class="lnr lnr-download"></i>
+                </div>
+                <h4>PDF Download</h4>
+              </div>
+            </div>
+            <!-- single course -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+              <div class="single_department">
+                <div class="dpmt_icon">
+                  <i class="lnr lnr-gift"></i>
+                </div>
+                <h4>Totally FREE</h4>
+              </div>
+            </div>
+            <!-- single course -->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+              <div class="single_department">
+                <div class="dpmt_icon">
+                  <i class="lnr lnr-earth"></i>
+                </div>
+                <h4>Online CV</h4>
+              </div>
+            </div>
+            <!-- single course -->
+            <div class="offset-lg-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+              <!--<div class="single_department">
+                <div class="dpmt_icon">
+                  <%#= image_tag "img/dpmt/icon7.png" %>
+                </div>
+                <h4>Development</h4>
+              </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offset-lg-1 col-lg-5">
+        <div class="dpmt_right">
+          <h1>Take your career to another level <i class="lnr lnr-rocket"></i></h1>
+          <p>We offer you the possibility to level up your carrier. Create a professional Resume, fill up your data, pick a template, add some customizations and download your resume in a pdf format.</p>
+          <p>You also have an online version of the resume you can share with people.</p>
+          <a href="#" class="primary-btn text-uppercase"><i class="lnr lnr-rocket"></i> start now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
