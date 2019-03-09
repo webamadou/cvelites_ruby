@@ -38,4 +38,7 @@
 //= require assets/js/material-dashboard
 //---------------------------------------------------------------
 //= require datatables
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .

@@ -1,5 +1,7 @@
 {
   "name": "cvelites",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react-loadable": "^5.5.0"
+  }
 }

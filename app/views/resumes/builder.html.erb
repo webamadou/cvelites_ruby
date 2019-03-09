@@ -1,0 +1,97 @@
+<%= content_for :navbar do %>
+  <%= render partial: 'layouts/front-end/builder-navbar' %>
+<% end %>
+<div class="builder-wrapper">
+  <div class="builder-container">
+    <h1 class="text-center">Building Resume</h1>
+    <div class="resume-skeleton">
+      <div class="skeleton-sheet skeleton-catherine">
+        <div class="header-wrapper">
+          <div class="row">
+            <div class="col-md-2 avatar-wrapper"><%= image_tag 'img/user_default.png', class: 'rounded-circle', width: '100%', height: '100%' %></div>
+            <div class="col-md-10 identity-wrapper">
+              <div class="user-identity">
+                <h3><%= @resume.user.name %> <%= @resume.user.firstname %></h3>
+                <strong>I am a super worker that is my super title you should never forget about it ok!</strong>
+              </div>
+              <div class="resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam at aut debitis distinctio doloremque eius esse, est impedit laboriosam maiores, minima modi obcaecati pariatur possimus quisquam recusandae repellat voluptatibus.</div>
+            </div>
+          </div>
+          <div class="row online-links-wrapper">
+            <ul>
+              <li class="user-email">
+                <b><%= @resume.user.email %></b>
+              </li>
+              <li class="user-address">
+                <b><i class="fa fa-pin"></i><%= @resume.user.address %></b>
+              </li>
+              <li class="user-linkedin">
+                <b><i class="fa fa-linkedin"></i>/in/webamadou</b>
+              </li>
+              <li class="user-website">
+                <b><i class="fa fa-link"></i> https://site.com</b>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row body-wrapper">
+          <div class="works-wrapper">
+            <% 6.times do  %>
+              <div class="work">
+                <h1>Work title</h1>
+                <h3>Company name</h3>
+                <div class="work-time"><span>07/2011</span> - <span>07/2015</span></div>
+                <div class="tasks">
+                  <h5>Achievement/Task</h5>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, veniam, voluptatem!</li>
+                  </ul>
+                </div>
+              </div>
+            <% end %>
+          </div>
+          <div class="educations-wrapper">
+            <% 3.times do %>
+              <div class="education">
+                <h1>Education title</h1>
+                <div class="education-place">University of the Education</div>
+                <dic class="education-period"><span>02/2006 - 10/2011</span></dic>
+              </div>
+            <% end %>
+          </div>
+          <div class="skills-wrapper">
+            <ul>
+              <% 12.times do %>
+                <li><span class="skill-name">Lorem ipsum dolor</span> <span class="skill-level">5</span></li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="realisation-wrapper">
+            <ul>
+              <% 4.times do %>
+                <li><span class="realisation-name">Lorem ipsum dolor</span><span class="realisation-link">http://links.com</span></li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="languages-wrapper">
+            <ul>
+              <% 4.times do %>
+                <li><span class="language">French</span><span class="level">5</span></li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="hobbies-wrapper">
+            <ul>
+              <% 4.times do %>
+                <li>Lorem</li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

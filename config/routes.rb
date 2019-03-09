@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root "home#index"
+
   get '/resume/:code' , to: 'resumes#index', as: :resume_config
+  get '/resume_builder', to: 'resumes#builder', as: :resume_builder
+
 
   #admin namespace
   namespace :admin do

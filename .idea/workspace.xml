@@ -2,24 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98294656-e0e4-479f-91e3-ba896f823074" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/front-end.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/dashboard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/front-end.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/dashboard.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/front-end.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/fonts/linearicons/Linearicons-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/fonts/linearicons/Linearicons-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/fonts/linearicons/Linearicons-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/fonts/linearicons/Linearicons-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/assets/fonts/linearicons/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/front-end/builder.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/builder.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/front-end/_builder-navbar.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/front-end/_default-navbar.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/resumes/builder.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/scripts.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/scripts.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/front-end.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/front-end.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/front-end.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/front-end.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/resumes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/resumes_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/front-end.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/front-end.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/lib/assets/material_dashboard_html/node_modules/" />
@@ -38,75 +39,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="96" column="72" selection-start-line="96" selection-start-column="72" selection-end-line="96" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end/css/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17546">
-              <caret line="566" column="14" selection-start-line="566" selection-start-column="14" selection-end-line="566" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="571" column="13" lean-forward="true" selection-start-line="571" selection-start-column="13" selection-end-line="571" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/scripts.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/front-end.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="25" column="6" selection-start-line="22" selection-start-column="4" selection-end-line="26" />
+            <state relative-caret-position="682">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/front-end.html.erb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/resumes/builder.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="36" column="102" selection-start-line="36" selection-start-column="102" selection-end-line="36" selection-end-column="102" />
+            <state relative-caret-position="217">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="93" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/material_dashboard.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/front-end/_default-navbar.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end/builder.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="e#563#686#0" />
+                <element signature="e#695#705#0" />
+                <element signature="e#805#893#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/resumes_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
-      <find>search_input_box</find>
-      <find>jquer</find>
-      <find>sea</find>
-      <find>fav</find>
-      <find>home-bann</find>
       <find>../img/banner/home-banner.jpg</find>
       <find>home-ba</find>
       <find>home_banner_area</find>
@@ -131,6 +149,12 @@
       <find>h1, h2, h3, h4, h5, h6</find>
       <find>banner_content</find>
       <find>dpmt_icon</find>
+      <find>yiel</find>
+      <find>content_f</find>
+      <find>nav</find>
+      <find>get_html</find>
+      <find>react-rails</find>
+      <find>builder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,10 +168,23 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/front-end/css/style.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/front-end/css/style.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/scripts.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/front-end.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/material_dashboard.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/front-end.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/front-end.scss" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/front-end/_default-navbar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/front-end/_builder-navbar.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/builder/_Main.js.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/front-end.js" />
+        <option value="$PROJECT_DIR$/app/controllers/resumes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
+        <option value="$PROJECT_DIR$/app/views/builder.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/front-end.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/front-end/builder.scss" />
+        <option value="$PROJECT_DIR$/app/views/resumes/builder.html.erb" />
       </list>
     </option>
   </component>
@@ -161,6 +198,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,7 +222,7 @@
               <item name="cvelites" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cvelites" type="b2602c69:ProjectViewProjectNode" />
@@ -192,6 +230,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="front-end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cvelites" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cvelites" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cvelites" type="b2602c69:ProjectViewProjectNode" />
@@ -204,34 +249,26 @@
               <item name="cvelites" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cvelites" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cvelites" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="countries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cvelites" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cvelites" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GenericSQL" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/layouts/front-end" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -259,18 +296,25 @@
       <workItem from="1551033502114" duration="272000" />
       <workItem from="1551033864087" duration="9807000" />
       <workItem from="1551045409502" duration="7337000" />
-      <workItem from="1551092115520" duration="11465000" />
+      <workItem from="1551092115520" duration="22151000" />
+      <workItem from="1551217375921" duration="1846000" />
+      <workItem from="1551293520644" duration="320000" />
+      <workItem from="1551293879390" duration="9263000" />
+      <workItem from="1551701307254" duration="4358000" />
+      <workItem from="1551784040100" duration="4649000" />
+      <workItem from="1551871606444" duration="5437000" />
+      <workItem from="1551949360346" duration="19272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28881000" />
+    <option name="totallyTimeSpent" value="84712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1331" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17120622" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16964981" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,7 +332,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Routes" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Routes" order="3" weight="0.3299611" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -311,27 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17546">
-          <caret line="566" column="14" selection-start-line="566" selection-start-column="14" selection-end-line="566" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/scripts.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/front-end.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="25" column="6" selection-start-line="22" selection-start-column="4" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/languages/index.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -350,34 +373,177 @@
     <entry file="file://$PROJECT_DIR$/app/views/admin/countries/index.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="566" column="14" selection-start-line="566" selection-start-column="14" selection-end-line="566" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/scripts.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_admin-navbar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="527">
           <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/material_dashboard.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/front-end.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="36" column="102" selection-start-line="36" selection-start-column="102" selection-end-line="36" selection-end-column="102" />
+        <state relative-caret-position="202">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end.scss">
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="571" column="13" lean-forward="true" selection-start-line="571" selection-start-column="13" selection-end-line="571" selection-end-column="13" />
+        <state relative-caret-position="651">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/front-end.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/builders/_Main.js.jsx" />
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/front-end/_builder-navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="66" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/js-routes-1.4.4/lib/js-routes.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resumes/index.pdf.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resumes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resumes/config.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/builder.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/builders/_builder.js.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="e#326#968#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/front-end.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/front-end/_default-navbar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="96" column="72" selection-start-line="96" selection-start-column="72" selection-end-line="96" selection-end-column="72" />
+        <state>
+          <caret selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/resumes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/front-end/builder.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#563#686#0" />
+            <element signature="e#695#705#0" />
+            <element signature="e#805#893#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/resumes/builder.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="93" selection-end-column="12" />
         </state>
       </provider>
     </entry>

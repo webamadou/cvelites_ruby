@@ -8,6 +8,7 @@
 @import "front-end/lightbox/simpleLightbox";
 @import "front-end/nice-select/css/nice-select";
 @import "front-end/animate-css/animate";
+@import "front-end/builder";
 // @import "front-end/css/style";
 
 /*----------------------------------------------------
@@ -340,6 +341,7 @@ button:focus {
   width: 100%;
   z-index: 99;
   transition: background 0.4s, all 0.3s linear;
+  background: #f5f5f5;
   .navbar {
     background: transparent;
     padding: 0px;
@@ -447,7 +449,10 @@ button:focus {
     }
   }
 }
-
+.builder-navbar {
+  background: #f7f7f7 !important;
+  height: 36px;
+}
 @media (min-width: 992px) {
   .header_area .navbar .nav .nav-item.submenu ul {
     position: absolute;

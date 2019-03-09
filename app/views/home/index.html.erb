@@ -1,3 +1,6 @@
+<%= content_for :navbar do %>
+    <%= render partial: 'layouts/front-end/default-navbar' %>
+<% end %>
 <section class="home_banner_area">
   <div class="banner_inner">
     <div class="container">
@@ -13,7 +16,7 @@
         <div class="banner_content">
           <div class="col-lg-12">
             <h5>Improve your chance to find a job</h5>
-            <div><a href="#" class="btn btn-lg primary-btn text-uppercase">create your cv online</a></div>
+            <div><a href="<%= resume_builder_path %>" class="btn btn-lg primary-btn text-uppercase">create your cv online</a></div>
           </div>
         </div>
       </div>
@@ -97,7 +100,7 @@
           <h1>Take your career to another level <i class="lnr lnr-rocket"></i></h1>
           <p>We offer you the possibility to level up your carrier. Create a professional Resume, fill up your data, pick a template, add some customizations and download your resume in a pdf format.</p>
           <p>You also have an online version of the resume you can share with people.</p>
-          <a href="#" class="primary-btn text-uppercase"><i class="lnr lnr-rocket"></i> start now!</a>
+          <a href="<%= resume_builder_path %>" class="primary-btn text-uppercase"><i class="lnr lnr-rocket"></i> start now!</a>
         </div>
       </div>
     </div>

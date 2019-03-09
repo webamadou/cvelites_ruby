@@ -18,6 +18,7 @@
 // require datatables
 //= require popper
 //= require bootstrap
+//= require js-routes
 //= require_tree .
 */
     /*

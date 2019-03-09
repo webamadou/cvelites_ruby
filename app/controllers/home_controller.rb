@@ -20,9 +20,6 @@ class HomeController < ApplicationController
     #@user = Admin::User.order("RAND()").includes(:resumes).first
     @user = Admin::User.find(1)
     session[:user_id] = @user.id
-    puts "****************************************"
-    puts session.inspect
-    puts "****************************************"
     render layout: 'layouts/front-end'
   end
 end

@@ -12,6 +12,11 @@ class ResumesController < ApplicationController
     end
   end
 
+  def builder
+    @resume = Admin::Resume.first
+    render layout: 'layouts/front-end'
+  end
+
   def get_html
     ActionController::Base.new.render_to_string(template: 'resumes/index.html.erb',
                                                 orientation: 'landscape',
