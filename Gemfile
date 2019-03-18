@@ -26,6 +26,7 @@ gem 'wkhtmltopdf-binary'
 gem 'coffee-rails', '~> 4.2'
 # gem react
 gem 'react-rails'
+gem 'webpacker'
 gem 'js-routes'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
