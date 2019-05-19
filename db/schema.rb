@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_02_11_230929) do
 
-  create_table "achievements", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "achievements", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "user_id"
     t.string "title"
     t.text "description"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["user_id"], name: "index_achievements_on_user_id"
   end
 
-  create_table "awards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "awards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "user_id"
     t.string "title", default: ""
     t.text "description"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["user_id"], name: "index_awards_on_user_id"
   end
 
-  create_table "companies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "companies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "description", default: ""
     t.string "legal_status", default: ""
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["domain_id"], name: "index_companies_on_domain_id"
   end
 
-  create_table "countries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "countries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "iso"
     t.string "name", null: false
     t.string "nicename", default: ""
@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "domains", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "domains", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.bigint "parent_id"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["parent_id"], name: "index_domains_on_parent_id"
   end
 
-  create_table "educations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "educations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "school_id"
     t.bigint "user_id"
     t.string "degree"
@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["user_id"], name: "index_educations_on_user_id"
   end
 
-  create_table "experiences", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "experiences", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.bigint "company_id"
     t.bigint "user_id"
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["user_id"], name: "index_experiences_on_user_id"
   end
 
-  create_table "hobbies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "hobbies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "icon", default: ""
     t.integer "status", default: 1
@@ -103,14 +103,14 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "hobbies_users", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "hobbies_users", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "hobby_id", null: false
     t.bigint "user_id", null: false
     t.index ["hobby_id", "user_id"], name: "index_hobbies_users_on_hobby_id_and_user_id"
     t.index ["user_id", "hobby_id"], name: "index_hobbies_users_on_user_id_and_hobby_id"
   end
 
-  create_table "languages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "languages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "code"
     t.integer "status", default: 1, null: false
@@ -118,14 +118,14 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "languages_resumes", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "languages_resumes", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "language_id", null: false
     t.bigint "resume_id", null: false
     t.index ["language_id", "resume_id"], name: "index_languages_resumes_on_language_id_and_resume_id"
     t.index ["resume_id", "language_id"], name: "index_languages_resumes_on_resume_id_and_language_id"
   end
 
-  create_table "resumes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "resumes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.bigint "user_id"
     t.text "description"
@@ -136,14 +136,14 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["user_id"], name: "index_resumes_on_user_id"
   end
 
-  create_table "resumes_templates", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "resumes_templates", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "resume_id", null: false
     t.bigint "template_id", null: false
     t.index ["resume_id", "template_id"], name: "index_resumes_templates_on_resume_id_and_template_id"
     t.index ["template_id", "resume_id"], name: "index_resumes_templates_on_template_id_and_resume_id"
   end
 
-  create_table "schools", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "schools", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.string "legal_status"
@@ -155,15 +155,15 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["country_id"], name: "index_schools_on_country_id"
   end
 
-  create_table "skills", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "skills", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.integer "status"
+    t.integer "status", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "skills_users", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "skills_users", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "skill_id", null: false
     t.bigint "user_id", null: false
     t.integer "level", default: 0
@@ -171,7 +171,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["user_id", "skill_id"], name: "index_skills_users_on_user_id_and_skill_id"
   end
 
-  create_table "templates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "templates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.text "description"
     t.bigint "domain_id"
@@ -182,7 +182,7 @@ ActiveRecord::Schema.define(version: 2019_02_11_230929) do
     t.index ["domain_id"], name: "index_templates_on_domain_id"
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "firstname"
     t.string "email"

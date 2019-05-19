@@ -1,0 +1,141 @@
+                               Prefix Verb   URI Pattern                                                                              Controller#Action
+                                 root GET    /                                                                                        home#index
+                    api_v1_cvbuilders GET    /api/v1/cvbuilders(.:format)                                                             api/v1/cvbuilders#index
+                                      POST   /api/v1/cvbuilders(.:format)                                                             api/v1/cvbuilders#create
+                 new_api_v1_cvbuilder GET    /api/v1/cvbuilders/new(.:format)                                                         api/v1/cvbuilders#new
+                edit_api_v1_cvbuilder GET    /api/v1/cvbuilders/:id/edit(.:format)                                                    api/v1/cvbuilders#edit
+                     api_v1_cvbuilder GET    /api/v1/cvbuilders/:id(.:format)                                                         api/v1/cvbuilders#show
+                                      PATCH  /api/v1/cvbuilders/:id(.:format)                                                         api/v1/cvbuilders#update
+                                      PUT    /api/v1/cvbuilders/:id(.:format)                                                         api/v1/cvbuilders#update
+                                      DELETE /api/v1/cvbuilders/:id(.:format)                                                         api/v1/cvbuilders#destroy
+                         admin_skills GET    /admin/skills(.:format)                                                                  admin/skills#index
+                                      POST   /admin/skills(.:format)                                                                  admin/skills#create
+                      new_admin_skill GET    /admin/skills/new(.:format)                                                              admin/skills#new
+                     edit_admin_skill GET    /admin/skills/:id/edit(.:format)                                                         admin/skills#edit
+                          admin_skill GET    /admin/skills/:id(.:format)                                                              admin/skills#show
+                                      PATCH  /admin/skills/:id(.:format)                                                              admin/skills#update
+                                      PUT    /admin/skills/:id(.:format)                                                              admin/skills#update
+                                      DELETE /admin/skills/:id(.:format)                                                              admin/skills#destroy
+                         admin_awards GET    /admin/awards(.:format)                                                                  admin/awards#index
+                                      POST   /admin/awards(.:format)                                                                  admin/awards#create
+                      new_admin_award GET    /admin/awards/new(.:format)                                                              admin/awards#new
+                     edit_admin_award GET    /admin/awards/:id/edit(.:format)                                                         admin/awards#edit
+                          admin_award GET    /admin/awards/:id(.:format)                                                              admin/awards#show
+                                      PATCH  /admin/awards/:id(.:format)                                                              admin/awards#update
+                                      PUT    /admin/awards/:id(.:format)                                                              admin/awards#update
+                                      DELETE /admin/awards/:id(.:format)                                                              admin/awards#destroy
+                   admin_achievements GET    /admin/achievements(.:format)                                                            admin/achievements#index
+                                      POST   /admin/achievements(.:format)                                                            admin/achievements#create
+                new_admin_achievement GET    /admin/achievements/new(.:format)                                                        admin/achievements#new
+               edit_admin_achievement GET    /admin/achievements/:id/edit(.:format)                                                   admin/achievements#edit
+                    admin_achievement GET    /admin/achievements/:id(.:format)                                                        admin/achievements#show
+                                      PATCH  /admin/achievements/:id(.:format)                                                        admin/achievements#update
+                                      PUT    /admin/achievements/:id(.:format)                                                        admin/achievements#update
+                                      DELETE /admin/achievements/:id(.:format)                                                        admin/achievements#destroy
+                        admin_resumes GET    /admin/resumes(.:format)                                                                 admin/resumes#index
+                                      POST   /admin/resumes(.:format)                                                                 admin/resumes#create
+                     new_admin_resume GET    /admin/resumes/new(.:format)                                                             admin/resumes#new
+                    edit_admin_resume GET    /admin/resumes/:id/edit(.:format)                                                        admin/resumes#edit
+                         admin_resume GET    /admin/resumes/:id(.:format)                                                             admin/resumes#show
+                                      PATCH  /admin/resumes/:id(.:format)                                                             admin/resumes#update
+                                      PUT    /admin/resumes/:id(.:format)                                                             admin/resumes#update
+                                      DELETE /admin/resumes/:id(.:format)                                                             admin/resumes#destroy
+                      admin_templates GET    /admin/templates(.:format)                                                               admin/templates#index
+                                      POST   /admin/templates(.:format)                                                               admin/templates#create
+                   new_admin_template GET    /admin/templates/new(.:format)                                                           admin/templates#new
+                  edit_admin_template GET    /admin/templates/:id/edit(.:format)                                                      admin/templates#edit
+                       admin_template GET    /admin/templates/:id(.:format)                                                           admin/templates#show
+                                      PATCH  /admin/templates/:id(.:format)                                                           admin/templates#update
+                                      PUT    /admin/templates/:id(.:format)                                                           admin/templates#update
+                                      DELETE /admin/templates/:id(.:format)                                                           admin/templates#destroy
+                        admin_hobbies GET    /admin/hobbies(.:format)                                                                 admin/hobbies#index
+                                      POST   /admin/hobbies(.:format)                                                                 admin/hobbies#create
+                      new_admin_hobby GET    /admin/hobbies/new(.:format)                                                             admin/hobbies#new
+                     edit_admin_hobby GET    /admin/hobbies/:id/edit(.:format)                                                        admin/hobbies#edit
+                          admin_hobby GET    /admin/hobbies/:id(.:format)                                                             admin/hobbies#show
+                                      PATCH  /admin/hobbies/:id(.:format)                                                             admin/hobbies#update
+                                      PUT    /admin/hobbies/:id(.:format)                                                             admin/hobbies#update
+                                      DELETE /admin/hobbies/:id(.:format)                                                             admin/hobbies#destroy
+                     admin_educations GET    /admin/educations(.:format)                                                              admin/educations#index
+                                      POST   /admin/educations(.:format)                                                              admin/educations#create
+                  new_admin_education GET    /admin/educations/new(.:format)                                                          admin/educations#new
+                 edit_admin_education GET    /admin/educations/:id/edit(.:format)                                                     admin/educations#edit
+                      admin_education GET    /admin/educations/:id(.:format)                                                          admin/educations#show
+                                      PATCH  /admin/educations/:id(.:format)                                                          admin/educations#update
+                                      PUT    /admin/educations/:id(.:format)                                                          admin/educations#update
+                                      DELETE /admin/educations/:id(.:format)                                                          admin/educations#destroy
+                    admin_experiences GET    /admin/experiences(.:format)                                                             admin/experiences#index
+                                      POST   /admin/experiences(.:format)                                                             admin/experiences#create
+                 new_admin_experience GET    /admin/experiences/new(.:format)                                                         admin/experiences#new
+                edit_admin_experience GET    /admin/experiences/:id/edit(.:format)                                                    admin/experiences#edit
+                     admin_experience GET    /admin/experiences/:id(.:format)                                                         admin/experiences#show
+                                      PATCH  /admin/experiences/:id(.:format)                                                         admin/experiences#update
+                                      PUT    /admin/experiences/:id(.:format)                                                         admin/experiences#update
+                                      DELETE /admin/experiences/:id(.:format)                                                         admin/experiences#destroy
+                          admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+                                      POST   /admin/users(.:format)                                                                   admin/users#create
+                       new_admin_user GET    /admin/users/new(.:format)                                                               admin/users#new
+                      edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+                           admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                                      PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                                      PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                                      DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+                        admin_schools GET    /admin/schools(.:format)                                                                 admin/schools#index
+                                      POST   /admin/schools(.:format)                                                                 admin/schools#create
+                     new_admin_school GET    /admin/schools/new(.:format)                                                             admin/schools#new
+                    edit_admin_school GET    /admin/schools/:id/edit(.:format)                                                        admin/schools#edit
+                         admin_school GET    /admin/schools/:id(.:format)                                                             admin/schools#show
+                                      PATCH  /admin/schools/:id(.:format)                                                             admin/schools#update
+                                      PUT    /admin/schools/:id(.:format)                                                             admin/schools#update
+                                      DELETE /admin/schools/:id(.:format)                                                             admin/schools#destroy
+                      admin_companies GET    /admin/companies(.:format)                                                               admin/companies#index
+                                      POST   /admin/companies(.:format)                                                               admin/companies#create
+                    new_admin_company GET    /admin/companies/new(.:format)                                                           admin/companies#new
+                   edit_admin_company GET    /admin/companies/:id/edit(.:format)                                                      admin/companies#edit
+                        admin_company GET    /admin/companies/:id(.:format)                                                           admin/companies#show
+                                      PATCH  /admin/companies/:id(.:format)                                                           admin/companies#update
+                                      PUT    /admin/companies/:id(.:format)                                                           admin/companies#update
+                                      DELETE /admin/companies/:id(.:format)                                                           admin/companies#destroy
+                        admin_domains GET    /admin/domains(.:format)                                                                 admin/domains#index
+                                      POST   /admin/domains(.:format)                                                                 admin/domains#create
+                     new_admin_domain GET    /admin/domains/new(.:format)                                                             admin/domains#new
+                    edit_admin_domain GET    /admin/domains/:id/edit(.:format)                                                        admin/domains#edit
+                         admin_domain GET    /admin/domains/:id(.:format)                                                             admin/domains#show
+                                      PATCH  /admin/domains/:id(.:format)                                                             admin/domains#update
+                                      PUT    /admin/domains/:id(.:format)                                                             admin/domains#update
+                                      DELETE /admin/domains/:id(.:format)                                                             admin/domains#destroy
+                      admin_countries GET    /admin/countries(.:format)                                                               admin/countries#index
+                                      POST   /admin/countries(.:format)                                                               admin/countries#create
+                    new_admin_country GET    /admin/countries/new(.:format)                                                           admin/countries#new
+                   edit_admin_country GET    /admin/countries/:id/edit(.:format)                                                      admin/countries#edit
+                        admin_country GET    /admin/countries/:id(.:format)                                                           admin/countries#show
+                                      PATCH  /admin/countries/:id(.:format)                                                           admin/countries#update
+                                      PUT    /admin/countries/:id(.:format)                                                           admin/countries#update
+                                      DELETE /admin/countries/:id(.:format)                                                           admin/countries#destroy
+                      admin_languages GET    /admin/languages(.:format)                                                               admin/languages#index
+                                      POST   /admin/languages(.:format)                                                               admin/languages#create
+                   new_admin_language GET    /admin/languages/new(.:format)                                                           admin/languages#new
+                  edit_admin_language GET    /admin/languages/:id/edit(.:format)                                                      admin/languages#edit
+                       admin_language GET    /admin/languages/:id(.:format)                                                           admin/languages#show
+                                      PATCH  /admin/languages/:id(.:format)                                                           admin/languages#update
+                                      PUT    /admin/languages/:id(.:format)                                                           admin/languages#update
+                                      DELETE /admin/languages/:id(.:format)                                                           admin/languages#destroy
+        rails_mandrill_inbound_emails POST   /rails/action_mailbox/mandrill/inbound_emails(.:format)                                  action_mailbox/ingresses/mandrill/inbound_emails#create
+        rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
+           rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
+        rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                  action_mailbox/ingresses/sendgrid/inbound_emails#create
+         rails_mailgun_inbound_emails POST   /rails/action_mailbox/mailgun/inbound_emails/mime(.:format)                              action_mailbox/ingresses/mailgun/inbound_emails#create
+       rails_conductor_inbound_emails GET    /rails/conductor/action_mailbox/inbound_emails(.:format)                                 rails/conductor/action_mailbox/inbound_emails#index
+                                      POST   /rails/conductor/action_mailbox/inbound_emails(.:format)                                 rails/conductor/action_mailbox/inbound_emails#create
+    new_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/new(.:format)                             rails/conductor/action_mailbox/inbound_emails#new
+   edit_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id/edit(.:format)                        rails/conductor/action_mailbox/inbound_emails#edit
+        rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#show
+                                      PATCH  /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#update
+                                      PUT    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#update
+                                      DELETE /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#destroy
+rails_conductor_inbound_email_reroute POST   /rails/conductor/action_mailbox/:inbound_email_id/reroute(.:format)                      rails/conductor/action_mailbox/reroutes#create
+                   rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+            rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+                   rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+            update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+                 rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
