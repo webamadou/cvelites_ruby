@@ -1,0 +1,11 @@
+<%= react_component 'Builder', data: {
+    user: current_user,
+    resume: @resume,
+    urls: {
+        home: root_path,
+        logout: new_admin_user_path,
+        profile: admin_user_path(current_user),
+        resume_download: resume_config_path(@resume.code, :format => :pdf)
+    }
+}
+%>

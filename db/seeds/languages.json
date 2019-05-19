@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Français",
+    "code": "fr",
+    "status": 1
+  }, {
+    "name": "English",
+    "code": "en",
+    "status": 1
+  }, {
+    "name": "Española",
+    "code": "es",
+    "status": 1
+  }
+]

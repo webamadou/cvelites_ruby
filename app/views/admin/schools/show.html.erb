@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @admin_school.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @admin_school.description %>
+</p>
+
+<p>
+  <strong>Legal status:</strong>
+  <%= @admin_school.legal_status %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @admin_school.address %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @admin_school.country %>
+</p>
+
+<%= link_to 'Edit', edit_admin_school_path(@admin_school) %> |
+<%= link_to 'Back', admin_schools_path %>

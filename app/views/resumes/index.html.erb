@@ -1,0 +1,10 @@
+<h2>config the resume</h2>
+<strong><%= @resume.name %></strong>
+<div>
+  <p><%= @resume.user.name %></p>
+  <ul>
+    <% @resume.templates.each do |template| %>
+      <li><%= template.name %></li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,24 @@
+<% content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <p id="notice"><%= notice %></p>
+      <h3>Countries</h3>
+    </div>
+    <div class="card-body">
+      <%= link_to 'New Country', new_admin_country_path, class: 'btn btn-primary' %>
+      <table id="country-dt" class="table table-bordered table-responsive table-striped" data-source="<%= admin_countries_path(format: :json) %>">
+        <thead>
+          <tr>
+            <th>Iso Codes</th>
+            <th>Name</th>
+            <th>Numcode</th>
+            <th>Phonecode</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard'  %>

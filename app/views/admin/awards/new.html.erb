@@ -1,0 +1,12 @@
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <h1>Add Award</h1>
+    </div>
+    <div class="card-body">
+      <%= render 'form', admin_award: @admin_award %>
+      <%= link_to 'Back', admin_awards_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

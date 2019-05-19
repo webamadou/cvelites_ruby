@@ -1,0 +1,43 @@
+<%= content_for :dashboard_content do %>
+  <div id="notice">
+    <% flash.each do |class_name, message| %>
+      <div class="alert alert-<%= class_name %>"><%= message %></div>
+    <% end %>
+  </div>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <h3><%= @admin_company.name %></h3>
+      <div class="row">
+        <div class="col-md-6">
+          <strong>Legal status:</strong>
+          <%= @admin_company.legal_status %>
+        </div>
+        <div class="col-md-6">
+          <strong>Address:</strong>
+          <%= @admin_company.address %>
+        </div>
+        <div class="col-md-12">
+          <strong>Domain:</strong>
+          <%= @admin_company.domain.name %>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <p>
+        <strong>Description:</strong>
+        <%= @admin_company.description %>
+      </p>
+      <p>
+        <strong>Status:</strong>
+        <%= @admin_company.decorate.status %>
+      </p>
+      <p>
+        <strong>Exist since:</strong>
+        <%= @admin_company.decorate.created_at %>
+      </p>
+      <%= link_to 'Edit', edit_admin_company_path(@admin_company) %> |
+      <%= link_to 'Back', admin_companies_path %>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

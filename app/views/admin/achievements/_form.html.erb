@@ -1,0 +1,48 @@
+
+<%= form_with(model: admin_achievement, local: true) do |form| %>
+  <% if admin_achievement.errors.any? %>
+    <div id="error_explanation">
+      <strong><%= pluralize(admin_achievement.errors.count, "error") %> prohibited this admin_achievement from being saved:</strong>
+
+      <ul class="alert alert-danger">
+      <% admin_achievement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :user_id, class: 'bmd-label-floating' %>
+        <%= form.select :user_id, Admin::User.pluck([:name, :id]), {include_blank: true},{ :class => 'form-control'} %>
+      </div>
+    </div>
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <label class="bmd-label-floating">Title</label>
+        <%= form.text_field :title, class: 'form-control' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :description, class: 'bmd-label-floating'%>
+        <%= form.text_area :description, class: 'form-control' %>
+      </div>
+    </div>
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :status, class: 'bmd-label-floating' %>
+        <%= form.number_field :status, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Save" ,class: "btn btn-default" %>
+  </div>
+<% end %>

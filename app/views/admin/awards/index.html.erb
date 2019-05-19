@@ -1,0 +1,29 @@
+<% content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <p id="notice"><%= notice %></p>
+      <h3>Awards</h3>
+    </div>
+    <div class="card-body">
+      <div id="notice">
+        <% flash.each do |class_name, message| %>
+          <div class="alert alert-<%= class_name %>"><%= message %></div>
+        <% end %>
+      </div>
+      <%= link_to 'Add awards', new_admin_award_path, class: "btn btn-primary" %>
+        <table id="awards-dt" class="table table-bordered table-striped" width="100%" data-source="<%= admin_awards_path %>">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>User</th>
+              <th>Date</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <br>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

@@ -1,0 +1,23 @@
+<%= content_for :dashboard_content do %>
+  <div class="card">
+    <div class="card-header card-header-primary">
+      <p id="notice"><%= notice %></p>
+      <h3>Admin Domains</h3>
+    </div>
+    <div class="card-body">
+      <%= link_to 'Add domain', new_admin_domain_path , class: 'btn btn-primary'%>
+      <table id="domains-dt" class="table table-bordered table-striped" width="100%" data-source="<%= admin_domains_path %>">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Parent</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+<% end %>
+<%= render template: 'layouts/material_dashboard' %>

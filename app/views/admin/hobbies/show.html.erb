@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @admin_hobby.name %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @admin_hobby.icon %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @admin_hobby.status %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @admin_hobby.user %>
+</p>
+
+<%= link_to 'Edit', edit_admin_hobby_path(@admin_hobby) %> |
+<%= link_to 'Back', admin_hobbies_path %>

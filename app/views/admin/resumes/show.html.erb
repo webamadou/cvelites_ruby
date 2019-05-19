@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @admin_resume.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @admin_resume.user %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @admin_resume.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @admin_resume.status %>
+</p>
+
+<%= link_to 'Edit', edit_admin_resume_path(@admin_resume) %> |
+<%= link_to 'Back', admin_resumes_path %>

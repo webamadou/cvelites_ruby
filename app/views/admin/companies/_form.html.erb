@@ -1,0 +1,74 @@
+<%= form_with(model: admin_company, local: true) do |form| %>
+  <% if admin_company.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(admin_company.errors.count, "error") %> prohibited this admin_company from being saved:</h2>
+
+      <ul class="alert alert-danger">
+      <% admin_company.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :name, class: "bmd-label-floating" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :legal_status, class: "bmd-label-floating" %>
+        <%= form.text_field :legal_status, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field col-md-12">
+      <div class="form-group bmd-form-group">
+        <%= form.label :description, class: "bmd-label-floating" %>
+        <%= form.text_field :description, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field col-md-4">
+      <div class="form-group bmd-form-group">
+        <%= form.label :address, class: "bmd-label-floating" %>
+        <%= form.text_field :address, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="field col-md-4">
+      <div class="form-group bmd-form-group">
+        <%= form.label :domain_id, class: "bmd-label-floating" %>
+        <%= form.number_field :domain_id, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="field col-md-4">
+      <div class="form-group bmd-form-group">
+        <%= form.label :status, class: "bmd-label-floating" %>
+        <%= form.number_field :status, class: "form-control" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="field col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.label :exist_since, class: "bmd-label-static" %>
+        <!--< %= form.date_select :exist_since, class: "form-control" %>-->
+        <%= form.text_field :exist_since, class: "form-control datepicker-field" %>
+      </div>
+    </div>
+    <div class="actions col-md-6">
+      <div class="form-group bmd-form-group">
+        <%= form.submit 'save', :class => "btn btn-block btn-primary" %>
+      </div>
+    </div>
+  </div>
+<% end %>
