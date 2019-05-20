@@ -16,10 +16,13 @@ class HomeController < ApplicationController
     [chars, numbers]
   end
 
-  def index
+  def index; end
+
+  def home
     #@user = Admin::User.order("RAND()").includes(:resumes).first
     @user = Admin::User.find(1)
     session[:user_id] = @user.id
     render layout: 'layouts/front-end'
   end
+
 end

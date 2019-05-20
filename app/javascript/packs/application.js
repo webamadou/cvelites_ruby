@@ -13,6 +13,14 @@ import '../stylesheets/application'
 import 'bootstrap/'
 import './bootstrap_custom'
 import '../datatables/loader'
+
+import React from 'react';
+import {render} from 'react-dom';
+import App from '../components/App'
+
+document.addEventListener('DOMContentLoaded', () => {
+    render(<App />, document.querySelector('#root'));
+});
 //import 'popper'
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
