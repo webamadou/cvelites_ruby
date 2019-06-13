@@ -13,7 +13,7 @@ development:
   <<: *default
   database: rails_cvelites_dev
   username: root
-  password: $mart_B4
+  password: bilfathi26
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,7 +22,7 @@ test:
   <<: *default
   database: rails_cvelites_test
   username: root
-  password: $mart_B4
+  password: bilfathi26
 
 production:
   <<: *default

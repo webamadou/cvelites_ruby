@@ -4,7 +4,7 @@ class CreateAdminUsers < ActiveRecord::Migration[5.2]
       t.string :name, null: true
       t.string :firstname, null: true
       t.string :email
-      t.string :password_digest
+      #t.string :password_digest
       t.string :title, default: '', null: true
       t.string :presentation, default: '', null: true
       t.date :birth_date,null: true

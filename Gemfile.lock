@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/mileszs/wicked_pdf.git
-  revision: d26f7cfc50ebaa7b258b76ebdf0a00629bf4ad02
+  revision: 2742687ab8a7558bdc703022e93193826c85f032
   specs:
-    wicked_pdf (1.2.2)
+    wicked_pdf (1.4.0)
       activesupport
 
 GIT
   remote: https://github.com/stympy/faker.git
-  revision: a26e802f9e9d578e2b8df3d094f0a77a5c6b1f80
+  revision: 0e8cc7eeb160532c84d8665aef649788e48a2c9c
   branch: master
   specs:
     faker (1.9.3)
@@ -16,7 +16,7 @@ GIT
       thor (~> 0.20.0)
       tty-pager (~> 0.12.0)
       tty-screen (~> 0.6.5)
-      tty-tree (~> 0.2.0)
+      tty-tree (~> 0.3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -84,7 +84,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     ajax-datatables-rails (1.0.0)
       railties (>= 4.2)
-    bcrypt (3.1.12)
+    bcrypt (3.1.13)
     bindex (0.7.0)
     bootsnap (1.4.4)
       msgpack (~> 1.0)
@@ -92,14 +92,13 @@ GEM
       momentjs-rails (>= 2.8.1)
     builder (3.2.3)
     byebug (11.0.1)
-    capybara (3.20.1)
+    capybara (3.23.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      regexp_parser (~> 1.2)
-      uglifier
+      regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (1.0.1)
       rake (< 13.0)
@@ -132,8 +131,7 @@ GEM
       concurrent-ruby (~> 1.0)
     equatable (0.5.0)
     erubi (1.8.0)
-    execjs (2.7.0)
-    ffi (1.11.0)
+    ffi (1.11.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.6.0)
@@ -169,7 +167,7 @@ GEM
     pastel (0.7.2)
       equatable (~> 0.5.0)
       tty-color (~> 0.4.0)
-    public_suffix (3.0.3)
+    public_suffix (3.1.0)
     puma (3.12.1)
     rack (2.0.7)
     rack-proxy (0.6.5)
@@ -206,14 +204,14 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    regexp_parser (1.5.0)
+    regexp_parser (1.5.1)
     request_store (1.4.1)
       rack (>= 1.4)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
     ruby_dep (1.5.0)
-    rubyzip (1.2.2)
+    rubyzip (1.2.3)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -225,7 +223,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    selenium-webdriver (3.142.2)
+    selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
     spring (2.0.2)
@@ -254,12 +252,10 @@ GEM
       tty-screen (~> 0.6)
       tty-which (~> 0.4)
     tty-screen (0.6.5)
-    tty-tree (0.2.0)
-    tty-which (0.4.0)
+    tty-tree (0.3.0)
+    tty-which (0.4.1)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.20)
-      execjs (>= 0.3.0, < 3)
     unicode-display_width (1.6.0)
     unicode_utils (1.4.0)
     warden (1.2.8)
@@ -274,17 +270,17 @@ GEM
       activemodel (>= 6.0.0.a)
       bindex (>= 0.4.0)
       railties (>= 6.0.0.a)
-    webdrivers (3.9.3)
+    webdrivers (4.0.1)
       nokogiri (~> 1.6)
       rubyzip (~> 1.0)
-      selenium-webdriver (~> 3.0)
-    webpacker (4.0.2)
+      selenium-webdriver (>= 3.0, < 4.0)
+    webpacker (4.0.7)
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
       railties (>= 4.2)
-    websocket-driver (0.7.0)
+    websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.3)
+    websocket-extensions (0.1.4)
     wkhtmltopdf-binary (0.12.4)
     xpath (3.2.0)
       nokogiri (~> 1.8)
