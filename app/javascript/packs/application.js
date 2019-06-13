@@ -3,23 +3,30 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-require("@rails/ujs").start()
+require("@rails/ujs").start();
 //require("turbolinks").start()
-require("@rails/activestorage").start()
-require('datatables.net-dt/js/dataTables.dataTables.min')
-require("channels")
+require("@rails/activestorage").start();
+require("datatables.net-dt/js/dataTables.dataTables.min");
+require("channels");
 
-import '../stylesheets/application'
-import 'bootstrap/'
-import './bootstrap_custom'
-import '../datatables/loader'
+import "../stylesheets/application";
+import "bootstrap/";
+import "./bootstrap_custom";
+import "../datatables/loader";
+import "../components/styles/styles";
 
-import React from 'react';
-import {render} from 'react-dom';
-import App from '../components/App'
+import React from "react";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "../components/App";
 
-document.addEventListener('DOMContentLoaded', () => {
-    render(<App />, document.querySelector('#root'));
+document.addEventListener("DOMContentLoaded", () => {
+  render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.querySelector("#root")
+  );
 });
 //import 'popper'
 // Uncomment to copy all static images under ../images to the output folder and reference

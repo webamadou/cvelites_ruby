@@ -20,6 +20,10 @@ gem 'responders'
 #gem 'wicked_pdf'
 gem 'wicked_pdf', github: 'mileszs/wicked_pdf'
 gem 'wkhtmltopdf-binary'
+
+gem 'devise'
+gem 'jwt'
+gem 'devise-jwt'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Install DataTable

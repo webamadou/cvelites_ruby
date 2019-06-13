@@ -16,7 +16,9 @@ class HomeController < ApplicationController
     [chars, numbers]
   end
 
-  def index; end
+  def index
+    render layout: 'layouts/front-end'
+  end
 
   def home
     #@user = Admin::User.order("RAND()").includes(:resumes).first

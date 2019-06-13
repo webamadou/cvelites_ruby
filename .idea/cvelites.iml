@@ -51,7 +51,13 @@
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v1.0.1, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.5, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.4, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.6.2, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise-jwt (v0.5.9, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="draper (v3.1.0, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-auto_inject (v0.6.1, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-configurable (v0.8.3, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-container (v0.7.1, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dry-core (v0.4.7, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="equatable (v0.5.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.8.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, rbenv: 2.5.3) [gem]" level="application" />
@@ -61,6 +67,7 @@
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.6.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.9.1, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-datatables (v1.10.19.1, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.2.1, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.2.3, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, rbenv: 2.5.3) [gem]" level="application" />
@@ -75,6 +82,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.5.2, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.3, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pastel (v0.7.2, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.3, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.1, rbenv: 2.5.3) [gem]" level="application" />
@@ -115,6 +123,8 @@
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v4.1.20, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.6.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode_utils (v1.4.0, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.8, rbenv: 2.5.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden-jwt_auth (v0.3.6, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v4.0.0, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webdrivers (v3.9.3, rbenv: 2.5.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webpacker (v4.0.2, rbenv: 2.5.3) [gem]" level="application" />
